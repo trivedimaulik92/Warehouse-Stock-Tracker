@@ -5,10 +5,11 @@ This application also allows user to manage information of various supplier/sale
 It also includes a feature to view past stock operations along with it’s respective vendor.
 
 ### Prerequisites
-This design of Warehouse Stock Tracker application makes several assumptions about its operational environment including hardware and software.
-*	The system will have Java Runtime Environment installed with SE 1.8 library.
-*	The system will have MySQL database installed with Local Server instance at port 3306.
-*	The system will have basic setup of ‘wst’ database in the local instance of MySQL server.
+This design of Warehouse Stock Tracker application makes several assumptions about its operational environment.
+*	Java Runtime Environment - SE 1.8 library.
+*	MySQL database installed with Local Server instance at port 3306. Install Latest [MySQL Server and Workbench](https://dev.mysql.com/downloads/installer/)
+
+
 
 
 
