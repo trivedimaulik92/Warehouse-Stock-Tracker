@@ -5,9 +5,18 @@ This application also allows user to manage information of various supplier/sale
 It also includes a feature to view past stock operations along with it’s respective vendor.
 
 ### Prerequisites
-This design of Warehouse Stock Tracker application makes several assumptions about its operational environment.
-*	Java Runtime Environment - SE 1.8 library.
-*	MySQL database installed with Local Server instance at port 3306. Install Latest [MySQL Server and Workbench](https://dev.mysql.com/downloads/installer/)
+
+-	Java Runtime Environment SE 1.8.
+-	MySQL Server instance at port 3306. Install  [MySQL Community Server GPL - v 8.0.12](https://dev.mysql.com/downloads/installer/)
+- Eclipse Neon or higher
+
+### Getting started
+
+- clone the repository to local directory
+- Import directory in Eclipse as Java Project
+- Run SQL files to set up database.
+- MYSQL_USERNAME and MYSQL_PASSWORD are defined in DBUtilNew.java class under db package with default username as "root" and password as "".
+
 
 
 
