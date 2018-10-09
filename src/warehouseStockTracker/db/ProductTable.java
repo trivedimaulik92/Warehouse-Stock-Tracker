@@ -28,33 +28,39 @@ public class ProductTable extends Table {
 
 	// method to generate productId
 	public int generateProductId(ProductType type) throws DBException {
-		int id = -1;
-		switch (type){
-		case laptop:
-			id = 10000000 + getLastRecordId(type) - 10000000 + 1;
-			break;
-		case cellphone:
-			id = 20000000 + getLastRecordId(type) - 20000000 + 1;
-			break;
-		case tablet:
-			id = 30000000 + getLastRecordId(type) - 30000000 + 1;
-			break;
-		case printer:
-			id = 40000000 + getLastRecordId(type) - 40000000 + 1;
-			break;
-		case scanner:
-			id = 50000000 + getLastRecordId(type) - 50000000 + 1;
-			break;
-		case television:
-			id = 60000000 + getLastRecordId(type) - 60000000 + 1;
-			break;
-		case camera:
-			id = 70000000 + getLastRecordId(type) - 70000000 + 1;
-			break;
-		case projector:
-			id = 80000000 + getLastRecordId(type) - 80000000 + 1;
-			break;
+		int id = getLastRecordId(type);
+		if(id == -1){
+			switch (type){
+			case laptop:
+				id = 10000001;
+				break;
+			case cellphone:
+				id = 20000001; 
+				break;
+			case tablet:
+				id = 30000001;
+				break;
+			case printer:
+				id = 40000001;
+				break;
+			case scanner:
+				id = 50000001;
+				break;
+			case television:
+				id = 60000001;
+				break;
+			case camera:
+				id = 70000001;
+				break;
+			case projector:
+				id = 80000001;
+				break;
+			}
 		}
+		else{
+			id = getLastRecordId(type) + 1;
+		}
+		
 		return id;
 	}
 

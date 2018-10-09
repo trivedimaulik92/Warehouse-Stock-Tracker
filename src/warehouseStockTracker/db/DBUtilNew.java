@@ -10,6 +10,9 @@ public class DBUtilNew{
 
 	// declaring connection variable
 	private static Connection connection;
+	
+	private static final String MYSQL_USERNAME = "root";
+	private static final String MYSQL_PASSWORD = "";
 
 	// restrict constructor
 	private DBUtilNew(){}
@@ -24,14 +27,9 @@ public class DBUtilNew{
 			try {
 				// set the db url, username, and password
 				String url = "jdbc:mysql://localhost:3306/wst";
-				//String username = "mma_user";
-				//String password = "CSCI_504";
 				
-				String username = "root";
-				String password = "Sunnyday_92";
-
 				// get and return connection
-				connection = DriverManager.getConnection(url, username, password);
+				connection = DriverManager.getConnection(url, MYSQL_USERNAME, MYSQL_PASSWORD);
 				return connection;
 			} catch(SQLException e) {
 				System.out.println(e);
