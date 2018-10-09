@@ -1,5 +1,5 @@
 # Warehouse-Stock-Tracker
-<<<<<<< HEAD
+
 Java application to track stock of items in warehouse
 =======
 Warehouse Stock Tracker is an application to monitor and update the activity of various stock items in a warehouse. 
@@ -21,8 +21,3 @@ It also includes a feature to view past stock operations along with it’s respe
 - MYSQL_USERNAME and MYSQL_PASSWORD are defined in DBUtilNew.java class under db package with default username as "root" and password as "".
 
 
-
-
-
-
->>>>>>> 16cb114303459383292ca14e6447ad0d35434ff9
